@@ -42,3 +42,6 @@ ui <- navbarPage(
   second_panel
 )
 
+server <- function(input, output) {
+  # assign values to `output` here
+}
