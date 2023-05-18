@@ -15,3 +15,15 @@ intro_panel <- tabPanel(
   p("[Summary text for page]"),
   p(a(href = "[url]", "[Link text]"))
 )
+
+sidebar_content <- sidebarPanel(
+  selectInput(
+    "y_var",
+    label = "Y Variable",
+    choices = select_values,
+    selected = "Speed"
+  )
+)
+main_content <- mainPanel(
+  plotOutput("plot")
+)
