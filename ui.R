@@ -35,3 +35,10 @@ second_panel <- tabPanel(
     sidebar_content, main_content
   )
 )
+
+ui <- navbarPage(
+  "[Nav Bar Title]",
+  intro_panel,
+  second_panel
+)
+
